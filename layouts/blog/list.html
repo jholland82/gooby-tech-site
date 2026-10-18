@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Engineering Insights</span>
+      <h1 class="section-title">Technical Articles & System Architecture</h1>
+      <p class="section-desc">
+        Deep dives into distributed systems, production engineering, performance tuning, and modern software design.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      {{ range .Pages }}
+      <article class="post-card">
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+          <span>•</span>
+          <span>{{ .ReadingTime }} min read</span>
+        </div>
+
+        <h2 class="post-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <p class="post-summary">{{ .Description | default .Summary | truncate 130 }}</p>
+
+        {{ with .Params.tags }}
+        <div class="card-tags" style="margin-top: auto;">
+          {{ range . }}
+          <span class="card-tag">#{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <a href="{{ .RelPermalink }}" class="card-link" style="margin-top: 1rem;">
+          Read Article →
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    {{ partial "cta-banner.html" . }}
+  </div>
+</div>
+{{ end }}

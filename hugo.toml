@@ -1,0 +1,78 @@
+baseURL = 'https://goobytech.com/'
+locale = 'en-us'
+title = 'Gooby Tech | Elite Software Engineering & Cloud Architecture'
+paginate = 10
+
+[params]
+  company_name = 'Gooby Tech'
+  tagline = 'Engineering Resilient Software, Scalable Cloud Systems & AI Solutions'
+  description = 'Gooby Tech is a premium software engineering consultancy. We design and build enterprise-grade distributed systems, cloud-native architectures, and high-performance web applications.'
+  author = 'Gooby Tech Engineering Team'
+  email = 'hello@goobytech.com'
+  phone = '+1 (555) 234-5678'
+  location = 'San Francisco, CA & Remote Global'
+  availability = 'Accepting new projects for Q4 & 2027'
+  calendly_url = 'https://calendly.com'
+  github_url = 'https://github.com'
+  linkedin_url = 'https://linkedin.com'
+  twitter_url = 'https://x.com'
+
+  # Contact form endpoint (e.g., https://formspree.io/f/your-id or leave empty for mailto fallback)
+  formspree_endpoint = ''
+
+  # Feature flags & UI
+  enable_theme_toggle = true
+  enable_reading_time = true
+  enable_table_of_contents = true
+
+[menu]
+  [[menu.main]]
+    identifier = 'services'
+    name = 'Services'
+    url = '/services/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'case-studies'
+    name = 'Case Studies'
+    url = '/case-studies/'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'tech-stack'
+    name = 'Tech Stack'
+    url = '/#tech-stack'
+    weight = 30
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 40
+
+  [[menu.main]]
+    identifier = 'blog'
+    name = 'Insights'
+    url = '/blog/'
+    weight = 50
+
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+    weight = 60
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = 'catppuccin-frappe'
+    noClasses = false
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

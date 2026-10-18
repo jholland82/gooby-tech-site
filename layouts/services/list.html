@@ -1,0 +1,99 @@
+{{ define "main" }}
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Our Offerings</span>
+      <h1 class="section-title">Senior Software Engineering Services</h1>
+      <p class="section-desc">
+        From greenfield systems to legacy modernization, we provide the deep architectural and hands-on coding expertise required to ship software that scales effortlessly.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      {{ range .Pages }}
+      <div class="card">
+        {{ with .Params.icon }}
+        <div class="card-icon-box">
+          {{ . | safeHTML }}
+        </div>
+        {{ end }}
+        <h2 class="card-title" style="font-size: 1.35rem;">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        <p class="card-desc">{{ .Description | default .Summary }}</p>
+        
+        {{ with .Params.tech_stack }}
+        <div class="card-tags">
+          {{ range . }}
+          <span class="card-tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <a href="{{ .RelPermalink }}" class="card-link" style="margin-top: auto;">
+          Detailed Service Breakdown →
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<!-- Engagement Models Section -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Flexible Collaboration</span>
+      <h2 class="section-title">How We Partner With You</h2>
+      <p class="section-desc">
+        We integrate seamlessly with your existing team and workflows according to your specific project needs.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3 class="card-title">Full Project Delivery</h3>
+        <p class="card-desc">
+          Turnkey engineering from initial discovery to production release. We manage sprints, architecture, development, QA, and deployment with guaranteed deliverables.
+        </p>
+        <ul style="color: var(--text-muted); font-size: 0.875rem; padding-left: 1.25rem; line-height: 1.8;">
+          <li>Fixed timeline & clear scope</li>
+          <li>Turnkey code ownership</li>
+          <li>Comprehensive documentation</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Embedded Engineering Squad</h3>
+        <p class="card-desc">
+          Senior software engineers embedded directly into your scrum cycles to accelerate velocity, tackle complex features, and unblock high-priority milestones.
+        </p>
+        <ul style="color: var(--text-muted); font-size: 0.875rem; padding-left: 1.25rem; line-height: 1.8;">
+          <li>Senior L5/L6 caliber engineers</li>
+          <li>Direct Slack/PR integration</li>
+          <li>Flexible monthly commitment</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Architecture Sprint & Audits</h3>
+        <p class="card-desc">
+          A dedicated 2-to-3 week technical deep-dive to audit performance, diagnose bottlenecks, evaluate cloud infrastructure, or design a scalable system blueprint.
+        </p>
+        <ul style="color: var(--text-muted); font-size: 0.875rem; padding-left: 1.25rem; line-height: 1.8;">
+          <li>Concrete remediation roadmaps</li>
+          <li>Database & cloud cost audit</li>
+          <li>Detailed RFC specification</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<div class="section">
+  <div class="container">
+    {{ partial "cta-banner.html" . }}
+  </div>
+</div>
+{{ end }}

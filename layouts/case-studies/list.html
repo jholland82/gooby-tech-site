@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Proven Engineering</span>
+      <h1 class="section-title">Case Studies & Technical Deliveries</h1>
+      <p class="section-desc">
+        Dive into the architectural decisions, technical trade-offs, and measurable outcomes from our recent client engagements.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      {{ range .Pages }}
+      <div class="case-study-card">
+        {{ with .Params.industry }}
+        <div class="case-client-badge">{{ . }}</div>
+        {{ end }}
+
+        {{ with .Params.headline_metric }}
+        <div class="case-metrics-badge">
+          <span>⚡ {{ . }}</span>
+        </div>
+        {{ end }}
+
+        <h2 class="card-title" style="font-size: 1.35rem;">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <p class="card-desc">{{ .Description | default .Summary }}</p>
+
+        {{ with .Params.tech_stack }}
+        <div class="card-tags">
+          {{ range . }}
+          <span class="card-tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <a href="{{ .RelPermalink }}" class="card-link" style="margin-top: auto;">
+          Read Case Study →
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    {{ partial "cta-banner.html" . }}
+  </div>
+</div>
+{{ end }}

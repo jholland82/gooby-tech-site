@@ -1,0 +1,143 @@
+{{ define "main" }}
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Get In Touch</span>
+      <h1 class="section-title">Let's Build Something Resilient</h1>
+      <p class="section-desc">
+        Have an engineering challenge, an MVP to build, or need senior architectural leadership? Tell us about your goals and we'll reply within 24 hours.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Contact Information & Quick Booking -->
+      <div>
+        <div class="contact-card-box">
+          <div class="badge" style="margin-bottom: 1.5rem;">
+            <span class="badge-pulse"></span>
+            <span>Available for Q4 & 2027</span>
+          </div>
+
+          <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem;">Direct Technical Consultation</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">
+            Speak directly with a principal engineer. We don't employ pushy sales reps — our discovery calls are technical, focused, and solution-oriented.
+          </p>
+
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div>
+              <div style="font-size: 0.8125rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700;">Email Us</div>
+              <a href="mailto:{{ .Site.Params.email }}" class="text-cyan" style="font-weight: 600;">{{ .Site.Params.email }}</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <div style="font-size: 0.8125rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700;">Phone / Signal</div>
+              <div style="font-weight: 600; color: var(--text-main);">{{ .Site.Params.phone }}</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <div style="font-size: 0.8125rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700;">Headquarters</div>
+              <div style="font-weight: 600; color: var(--text-main);">{{ .Site.Params.location }}</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle);">
+            <div style="font-weight: 700; margin-bottom: 0.5rem;">Need an immediate conversation?</div>
+            <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;">
+              Skip the email queue and book an introductory 30-minute technical architecture call directly on our calendar.
+            </p>
+            <a href="{{ .Site.Params.calendly_url }}" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%;">
+              Book Introductory Video Call ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Trust & Security Highlights -->
+        <div style="margin-top: 2rem; padding: 1.5rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);">
+          <div style="font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--text-main);">🔒 100% IP Ownership & Strict NDA</div>
+          <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin: 0;">
+            All code, architecture diagrams, and intellectual property developed belong 100% to your company from day one. Mutual NDAs signed prior to deep technical sharing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: var(--radius-lg); padding: 2.5rem;">
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem;">Project Inquiry Form</h3>
+
+          <form id="contact-form" action="{{ .Site.Params.formspree_endpoint }}" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Name *</label>
+                <input class="form-control" type="text" id="contact-name" name="name" required placeholder="Alex Turner">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Work Email *</label>
+                <input class="form-control" type="email" id="contact-email" name="email" required placeholder="alex@company.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-company">Company or Project</label>
+                <input class="form-control" type="text" id="contact-company" name="company" placeholder="Acme Systems">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-service">Primary Area of Need</label>
+                <select class="form-control" id="contact-service" name="service">
+                  <option value="Full-Stack Web Development">Full-Stack Web Development</option>
+                  <option value="Cloud Architecture & DevOps">Cloud Architecture & DevOps</option>
+                  <option value="Distributed Systems & High-Load APIs">Distributed Systems & High-Load APIs</option>
+                  <option value="AI & LLM Systems Engineering">AI & LLM Systems Engineering</option>
+                  <option value="Security & Performance Audit">Security & Performance Audit</option>
+                  <option value="Fractional CTO & Advisory">Fractional CTO & Advisory</option>
+                  <option value="Other Technical Inquiry">Other Technical Inquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Approximate Budget Range</label>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
+                <label style="background: var(--bg-surface); border: 1px solid var(--border-card); padding: 0.6rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.8125rem; text-align: center; cursor: pointer; display: block;">
+                  <input type="radio" name="budget" value="10k-25k" style="margin-right: 0.35rem;"> $10k - $25k
+                </label>
+                <label style="background: var(--bg-surface); border: 1px solid var(--border-card); padding: 0.6rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.8125rem; text-align: center; cursor: pointer; display: block;">
+                  <input type="radio" name="budget" value="25k-50k" style="margin-right: 0.35rem;" checked> $25k - $50k
+                </label>
+                <label style="background: var(--bg-surface); border: 1px solid var(--border-card); padding: 0.6rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.8125rem; text-align: center; cursor: pointer; display: block;">
+                  <input type="radio" name="budget" value="50k-100k" style="margin-right: 0.35rem;"> $50k - $100k
+                </label>
+                <label style="background: var(--bg-surface); border: 1px solid var(--border-card); padding: 0.6rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.8125rem; text-align: center; cursor: pointer; display: block;">
+                  <input type="radio" name="budget" value="100k+" style="margin-right: 0.35rem;"> $100k+
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-details">Project Description & Technical Requirements *</label>
+              <textarea class="form-control" id="contact-details" name="details" rows="5" required placeholder="Describe your current tech stack, goals, timelines, and main challenges..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem; font-size: 1rem;">
+              Send Technical Inquiry →
+            </button>
+            <p style="text-align: center; color: var(--text-dim); font-size: 0.75rem; margin-top: 0.75rem;">
+              We never share your data. Confidentiality guaranteed.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

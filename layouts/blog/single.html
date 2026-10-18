@@ -1,0 +1,68 @@
+{{ define "main" }}
+<div class="section" style="padding-bottom: 2rem;">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <!-- Breadcrumb -->
+      <div style="font-size: 0.875rem; color: var(--text-dim); margin-bottom: 1.5rem;">
+        <a href="/" style="color: var(--text-dim);">Home</a> &nbsp;/&nbsp; 
+        <a href="/blog/" style="color: var(--text-dim);">Insights</a> &nbsp;/&nbsp; 
+        <span style="color: var(--accent-cyan);">{{ .Title }}</span>
+      </div>
+
+      <div style="margin-bottom: 2.5rem;">
+        <h1 class="section-title" style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 1rem;">{{ .Title }}</h1>
+
+        <div style="display: flex; align-items: center; gap: 1rem; color: var(--text-muted); font-size: 0.9rem; flex-wrap: wrap;">
+          <div>By <strong style="color: var(--text-main);">{{ .Params.author | default .Site.Params.author }}</strong></div>
+          <span>•</span>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          <span>•</span>
+          <span>{{ .ReadingTime }} min read</span>
+        </div>
+
+        {{ with .Params.tags }}
+        <div class="card-tags" style="margin-top: 1rem;">
+          {{ range . }}
+          <span class="card-tag">#{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Table of Contents if enabled -->
+      {{ if and .Site.Params.enable_table_of_contents .TableOfContents }}
+      <details style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 2.5rem;">
+        <summary style="font-weight: 700; cursor: pointer; color: var(--accent-cyan);">Table of Contents</summary>
+        <div style="margin-top: 0.75rem; font-size: 0.9rem; line-height: 1.7;">
+          {{ .TableOfContents }}
+        </div>
+      </details>
+      {{ end }}
+
+      <!-- Article Content -->
+      <article class="prose">
+        {{ .Content }}
+      </article>
+
+      <!-- Author Bio Box -->
+      <div style="margin-top: 4rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2rem; display: flex; align-items: center; gap: 1.5rem;">
+        <div style="width: 54px; height: 54px; border-radius: 50%; background: var(--gradient-brand); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.25rem; color: #fff; flex-shrink: 0;">
+          GT
+        </div>
+        <div>
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem;">Gooby Tech Engineering</h4>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin: 0; line-height: 1.5;">
+            We architect and build resilient distributed backends, cloud infrastructure, and enterprise software systems. Need assistance with an engineering bottleneck? <a href="/contact/" class="text-cyan">Contact our team</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    {{ partial "cta-banner.html" . }}
+  </div>
+</div>
+{{ end }}
