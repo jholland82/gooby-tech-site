@@ -1,13 +1,13 @@
 baseURL = 'https://goobytech.com/'
 locale = 'en-us'
-title = 'Gooby Tech | Ruby on Rails, TypeScript, React, Angular, C# & Swift'
+title = 'Gooby Technologies, LLC | Ruby on Rails, TypeScript, React, Angular, C# & Swift'
 paginate = 10
 
 [params]
-  company_name = 'Gooby Tech'
+  company_name = 'Gooby Technologies, LLC'
   tagline = 'Expert Engineering in Ruby on Rails, TypeScript, React, Angular, C# & Swift'
-  description = 'Gooby Tech is an elite software engineering consultancy specializing in Ruby on Rails, TypeScript/JavaScript (React & Angular), C# (.NET), and Swift (iOS).'
-  author = 'Gooby Tech Engineering Team'
+  description = 'Gooby Technologies, LLC is an elite software engineering consultancy specializing in Ruby on Rails, TypeScript/JavaScript (React & Angular), C# (.NET), and Swift (iOS).'
+  author = 'Gooby Technologies, LLC Engineering Team'
   email = 'hello@goobytech.com'
   phone = '+1 (555) 234-5678'
   location = 'San Francisco, CA & Remote Global'

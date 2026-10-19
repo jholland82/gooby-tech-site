@@ -13,7 +13,7 @@ tech_stack:
   - "Node.js (Fastify)"
   - "PostgreSQL"
 testimonial:
-  quote: "Our clinical nurses visit patients in rural areas with zero cellular reception. The native iOS app built by Gooby Tech in Swift works flawlessly offline and syncs hundreds of biometric readings the moment connectivity returns. It has completely transformed our field operations."
+  quote: "Our clinical nurses visit patients in rural areas with zero cellular reception. The native iOS app built by Gooby Technologies, LLC in Swift works flawlessly offline and syncs hundreds of biometric readings the moment connectivity returns. It has completely transformed our field operations."
   author: "Dr. Rachel Campbell"
   role: "Chief Medical Officer, VitalCare Diagnostics"
 ---
@@ -24,7 +24,7 @@ VitalCare Diagnostics equips field nurses and emergency technicians with iPads a
 
 Their previous hybrid mobile wrapper suffered from frequent memory crashes when processing large biometric data buffers, failed to sync reliably in the background, and frustrated clinicians with choppy scrolling.
 
-Gooby Tech was engaged to build a high-performance native iOS application in **Swift** and architect an offline-first synchronization protocol with a **TypeScript** backend.
+Gooby Technologies, LLC was engaged to build a high-performance native iOS application in **Swift** and architect an offline-first synchronization protocol with a **TypeScript** backend.
 
 ---
 

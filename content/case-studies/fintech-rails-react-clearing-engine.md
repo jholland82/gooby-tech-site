@@ -13,7 +13,7 @@ tech_stack:
   - "Redis Cluster"
   - "PostgreSQL"
 testimonial:
-  quote: "Gooby Tech completely transformed our Rails and React stack. They solved complex database deadlocks, scaled our Sidekiq queues to process millions of transactions smoothly, and delivered a responsive TypeScript dashboard our merchants love."
+  quote: "Gooby Technologies, LLC completely transformed our Rails and React stack. They solved complex database deadlocks, scaled our Sidekiq queues to process millions of transactions smoothly, and delivered a responsive TypeScript dashboard our merchants love."
   author: "Marcus Kim"
   role: "VP of Engineering, PayPulse"
 ---
@@ -22,7 +22,7 @@ testimonial:
 
 PayPulse is a fast-growing FinTech company processing cross-border payments, merchant settlements, and payouts across North America and Europe. Built on a **Ruby on Rails** backend with a **React / TypeScript** frontend, their transaction volume surged past $60M per month. 
 
-Under peak load, asynchronous job queues backed up, database connection pools saturated, and merchant reporting pages experienced slow query times. Gooby Tech was brought in to optimize their Rails architecture, eliminate database bottlenecks, and modernize their React frontend.
+Under peak load, asynchronous job queues backed up, database connection pools saturated, and merchant reporting pages experienced slow query times. Gooby Technologies, LLC was brought in to optimize their Rails architecture, eliminate database bottlenecks, and modernize their React frontend.
 
 ---
 
@@ -52,7 +52,7 @@ We refactored the merchant management portal into a clean, modern **React and Ty
 
 ## Measurable Results
 
-| Metric | Before Optimization | After Gooby Tech | Impact |
+| Metric | Before Optimization | After Gooby Technologies, LLC | Impact |
 | :--- | :--- | :--- | :--- |
 | **P99 Settlement Latency** | 3,800 ms | **380 ms** | **90% Latency Reduction** |
 | **Sidekiq Processing Rate** | 220 jobs/sec | **2,400+ jobs/sec** | **11x Job Queue Throughput** |

@@ -2,7 +2,7 @@
 title: "Building Offline-First iOS Applications with Swift and SwiftData"
 description: "How to architect resilient, offline-first native iOS applications using Swift, SwiftUI, and SwiftData with seamless background synchronization."
 date: 2026-10-10T14:00:00Z
-author: "Gooby Tech Engineering Team"
+author: "Gooby Technologies, LLC Engineering Team"
 tags:
   - "swift"
   - "ios"

@@ -1,0 +1,18 @@
+name: gooby-tech
+
+static_sites:
+  - name: gooby-tech
+    github:
+      repo: jholland82/gooby_tech
+      branch: main
+      deploy_on_push: true
+    # Built with the Node.js buildpack: npm installs Hugo (hugo-extended),
+    # then `npm run build` runs `hugo --minify`.
+    environment_slug: node-js
+    build_command: npm run build
+    output_dir: public
+    error_document: 404.html
+    envs:
+      - key: HUGO_ENVIRONMENT
+        value: production
+        scope: BUILD_TIME

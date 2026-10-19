@@ -36,7 +36,7 @@ faqs:
 
 Modern **C#** and **ASP.NET Core (.NET 8 and 9)** represent a high-performance, rock-solid foundation for enterprise software. With just-in-time (JIT) compilation improvements, minimal APIs, and cross-platform container support, modern .NET combines the speed of compiled languages with extraordinary developer productivity.
 
-At **Gooby Tech**, we help enterprises and scale-ups leverage C# to build resilient, high-throughput backend services and maintainable architectures.
+At **Gooby Technologies, LLC**, we help enterprises and scale-ups leverage C# to build resilient, high-throughput backend services and maintainable architectures.
 
 ### Core Capabilities in C# & .NET
 

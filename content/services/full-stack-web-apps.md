@@ -37,7 +37,7 @@ faqs:
 
 Building a successful web platform requires more than just making pages look good. It demands **clean architecture**, **resilient state management**, **low latency**, and **maintainable code** that won't require a total rewrite in twelve months.
 
-At **Gooby Tech**, we approach full-stack web engineering with senior rigor. We construct applications where UI components are pure, APIs are strictly typed, queries are indexed, and bundle sizes are kept lean.
+At **Gooby Technologies, LLC**, we approach full-stack web engineering with senior rigor. We construct applications where UI components are pure, APIs are strictly typed, queries are indexed, and bundle sizes are kept lean.
 
 ### Core Capabilities
 

@@ -1,11 +1,11 @@
 ---
-title: "About Gooby Tech"
+title: "About Gooby Technologies, LLC"
 description: "We are an elite software engineering consultancy specializing in Ruby on Rails, TypeScript, React, Angular, C# (.NET), and Swift (iOS)."
 ---
 
 ## Who We Are
 
-**Gooby Tech** was founded on a simple premise: modern software development requires deep technical mastery, not bureaucratic process. High-growth tech companies, scaling SaaS providers, and enterprise innovators don't need large, generic IT agencies staffed with junior resources learning on their dime.
+**Gooby Technologies, LLC** was founded on a simple premise: modern software development requires deep technical mastery, not bureaucratic process. High-growth tech companies, scaling SaaS providers, and enterprise innovators don't need large, generic IT agencies staffed with junior resources learning on their dime.
 
 They need **senior-level software engineers** who have architected, scaled, and maintained mission-critical applications across web, enterprise backend, and native mobile environments.
 
@@ -53,7 +53,7 @@ We never lock clients into proprietary frameworks or obscure configurations. You
 
 ## How We Compare
 
-| Feature | Typical Agency / Offshore | Gooby Tech |
+| Feature | Typical Agency / Offshore | Gooby Technologies, LLC |
 | :--- | :--- | :--- |
 | **Team Seniority** | Junior devs managed by account reps | 100% Senior & Staff-level Engineers |
 | **Core Technologies** | Generic / jack-of-all-trades | Deep specialization in Rails, TS/React/Angular, C#, Swift |

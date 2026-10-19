@@ -13,7 +13,7 @@ tech_stack:
   - "PostgreSQL"
   - "Sidekiq Enterprise"
 testimonial:
-  quote: "During our holiday drop last year, our store crashed and we oversold 1,200 jackets that we had to refund. This year with Gooby Tech's Rails and Angular architecture, we had our biggest sales day in company history ($4.8M) without a single glitch or angry customer."
+  quote: "During our holiday drop last year, our store crashed and we oversold 1,200 jackets that we had to refund. This year with Gooby Technologies, LLC's Rails and Angular architecture, we had our biggest sales day in company history ($4.8M) without a single glitch or angry customer."
   author: "David Chen"
   role: "Chief Technology Officer, ThreadCraft"
 ---
@@ -22,7 +22,7 @@ testimonial:
 
 ThreadCraft is a high-growth streetwear and apparel brand known for limited-quantity viral product drops. In previous holiday sales, rapid traffic spikes caused severe PostgreSQL row-lock contention, cart checkout crashes, and catastrophic inventory overselling that cost hundreds of thousands of dollars in refunds and damaged brand reputation.
 
-Gooby Tech was brought in 8 weeks before Black Friday to re-architect their inventory reservation pipeline in **Ruby on Rails** and build a high-performance checkout experience in **Angular** and **TypeScript**.
+Gooby Technologies, LLC was brought in 8 weeks before Black Friday to re-architect their inventory reservation pipeline in **Ruby on Rails** and build a high-performance checkout experience in **Angular** and **TypeScript**.
 
 ---
 
@@ -52,7 +52,7 @@ We built a responsive, modular checkout frontend in **Angular** using **TypeScri
 
 ## Measurable Results
 
-| Metric | Previous Black Friday | With Gooby Tech (Rails & Angular) |
+| Metric | Previous Black Friday | With Gooby Technologies, LLC (Rails & Angular) |
 | :--- | :--- | :--- |
 | **Peak Concurrent Shoppers** | 12,000 users (System Crashed) | **68,000 concurrent users** |
 | **Oversold Inventory Errors** | 1,200+ orders oversold | **0 oversold units** |

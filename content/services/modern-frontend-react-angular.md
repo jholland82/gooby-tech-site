@@ -36,7 +36,7 @@ faqs:
 
 Modern user interfaces are sophisticated distributed systems running in the browser. Without disciplined architectural patterns, client-side applications quickly devolve into tangled state, unpredictable re-renders, and bloated bundle sizes that frustrate users.
 
-At **Gooby Tech**, we approach frontend engineering with software engineering rigor. We build clean, maintainable, and strictly typed applications in **React** and **Angular** that remain responsive under heavy user interaction.
+At **Gooby Technologies, LLC**, we approach frontend engineering with software engineering rigor. We build clean, maintainable, and strictly typed applications in **React** and **Angular** that remain responsive under heavy user interaction.
 
 ### Our Frontend Disciplines
 

@@ -1,5 +1,5 @@
 /**
- * Gooby Tech - Client Scripts
+ * Gooby Technologies, LLC - Client Scripts
  */
 
 (function () {

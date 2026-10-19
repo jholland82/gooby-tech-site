@@ -13,7 +13,7 @@ tech_stack:
   - "Entity Framework Core"
   - "Microsoft Azure"
 testimonial:
-  quote: "The migration from legacy .NET Framework to .NET 8 and Angular gave our dispatchers real-time visibility for the first time in years. Gooby Tech delivered clean architecture, rock-solid C# code, and an incredibly responsive Angular interface."
+  quote: "The migration from legacy .NET Framework to .NET 8 and Angular gave our dispatchers real-time visibility for the first time in years. Gooby Technologies, LLC delivered clean architecture, rock-solid C# code, and an incredibly responsive Angular interface."
   author: "David Vance"
   role: "Chief Technology Officer, TransGlobal Logistics"
 ---
@@ -22,7 +22,7 @@ testimonial:
 
 TransGlobal Logistics operates a nationwide fleet of 4,000 freight carriers and manages real-time warehouse distribution for multinational retail partners. Their mission-critical fleet management application was running on an aging .NET Framework monolith with an outdated frontend, leading to high hosting costs on dedicated Windows servers, sluggish dispatch tracking, and difficult developer onboarding.
 
-Gooby Tech was engaged to execute an incremental modernization of their core services to **C# (.NET 8)** and build an enterprise-grade **Angular** SPA.
+Gooby Technologies, LLC was engaged to execute an incremental modernization of their core services to **C# (.NET 8)** and build an enterprise-grade **Angular** SPA.
 
 ---
 

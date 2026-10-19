@@ -36,7 +36,7 @@ faqs:
 
 Web wrappers and generic cross-platform tools often create sluggish user experiences, break during major iOS updates, and struggle with background execution. When your mobile product demands buttery-smooth responsiveness, hardware access, and absolute reliability, **native Swift is the gold standard**.
 
-At **Gooby Tech**, we build native iOS and iPadOS applications using modern **Swift**, **SwiftUI**, and **Combine**. We craft mobile software that feels natural on Apple devices and delights users.
+At **Gooby Technologies, LLC**, we build native iOS and iPadOS applications using modern **Swift**, **SwiftUI**, and **Combine**. We craft mobile software that feels natural on Apple devices and delights users.
 
 ### Native iOS Capabilities
 

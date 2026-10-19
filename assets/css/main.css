@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Gooby Tech - Design System & Modern CSS (Emerald Green Theme)
+   Gooby Technologies, LLC - Design System & Modern CSS (Emerald Green Theme)
    ========================================================================== */
 
 :root {
@@ -1129,3 +1129,10 @@ button, input, select, textarea {
 
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 480px) {
+  .brand-link {
+    font-size: 1.05rem;
+  }
+}
+

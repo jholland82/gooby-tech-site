@@ -1,4 +1,4 @@
-# Gooby Tech — Software Engineering Services Website
+# Gooby Technologies, LLC — Software Engineering Services Website
 
 A production-grade, ultra-fast Hugo website engineered for software engineering consultancies and senior developers specializing in **Ruby on Rails**, **TypeScript / JavaScript (React & Angular)**, **C# (.NET)**, and **Swift (iOS)**.
 
@@ -109,7 +109,7 @@ gooby-tech-site/
 
 ### Site Settings & Branding
 Edit `hugo.toml` to customize:
-- `company_name`: Business name (e.g. `Gooby Tech`)
+- `company_name`: Business name (e.g. `Gooby Technologies, LLC`)
 - `tagline`: Business tagline
 - `email`: Direct contact inbox (e.g. `hello@goobytech.com`)
 - `phone`: Contact phone number
@@ -157,6 +157,14 @@ Case study details...
 ## 🚢 Deployment Options
 
 Since this site generates pure static HTML/CSS/JS, it can be hosted on any edge CDN:
+
+### DigitalOcean App Platform
+Configured via [.do/app.yaml](file:///.do/app.yaml) using the Node.js buildpack (`environment_slug: node-js`):
+- **Dependencies**: `npm install` installs `hugo-extended`
+- **Build command**: `npm run build` (`hugo --minify`)
+- **Output directory**: `public`
+- **Error document**: `404.html`
+- **Node version**: Defined in [.node-version](file:///.node-version)
 
 ### Cloudflare Pages
 - **Build command**: `hugo --minify`

@@ -36,7 +36,7 @@ faqs:
 
 Ruby on Rails has powered many of the world's most successful tech companies. Its convention-over-configuration philosophy enables small, senior engineering teams to outpace organizations five times their size.
 
-At **Gooby Tech**, we combine the rapid iteration speed of Rails with the engineering rigor required for enterprise scale. We write idiomatic, clean Ruby code, enforce strict domain boundaries, and optimize database access so your application never outgrows its architecture.
+At **Gooby Technologies, LLC**, we combine the rapid iteration speed of Rails with the engineering rigor required for enterprise scale. We write idiomatic, clean Ruby code, enforce strict domain boundaries, and optimize database access so your application never outgrows its architecture.
 
 ### What We Deliver
 

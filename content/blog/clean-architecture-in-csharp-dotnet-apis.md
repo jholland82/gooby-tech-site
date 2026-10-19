@@ -2,7 +2,7 @@
 title: "Clean Architecture in C# and ASP.NET Core: A Practical Guide"
 description: "How to structure modern enterprise C# (.NET 8/9) applications using Clean Architecture, Domain-Driven Design, and Entity Framework Core without unnecessary boilerplate."
 date: 2026-10-06T12:00:00Z
-author: "Gooby Tech Engineering Team"
+author: "Gooby Technologies, LLC Engineering Team"
 tags:
   - "csharp"
   - "dotnet"

@@ -1,0 +1,11 @@
+{
+  "name": "gooby-tech",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hugo --minify"
+  },
+  "devDependencies": {
+    "hugo-extended": "0.168.0"
+  }
+}

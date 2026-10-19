@@ -2,7 +2,7 @@
 title: "Architecting Enterprise Frontends: Angular vs. React in 2026"
 description: "A pragmatic comparison of Angular and React for enterprise TypeScript architectures: state management, bundle size, developer ergonomics, and long-term maintainability."
 date: 2026-10-15T09:00:00Z
-author: "Gooby Tech Engineering Team"
+author: "Gooby Technologies, LLC Engineering Team"
 tags:
   - "typescript"
   - "react"
@@ -14,7 +14,7 @@ When embarking on a large-scale enterprise web application, engineering leaders 
 
 Both ecosystems have matured remarkably. Angular has shed its historical verbosity with **Standalone Components**, **Angular Signals**, and fine-grained reactivity. React has embraced **Server Components**, modern streaming, and decoupled state libraries.
 
-In this guide, we provide an architectural comparison based on building dozens of production systems in both frameworks at **Gooby Tech**.
+In this guide, we provide an architectural comparison based on building dozens of production systems in both frameworks at **Gooby Technologies, LLC**.
 
 ---
 

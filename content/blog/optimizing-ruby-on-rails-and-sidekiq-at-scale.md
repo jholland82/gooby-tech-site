@@ -2,7 +2,7 @@
 title: "Optimizing Ruby on Rails and Sidekiq for High-Throughput Production"
 description: "A battle-tested guide to scaling Ruby on Rails applications: ActiveRecord query tuning, connection pool sizing, jemalloc memory optimization, and Sidekiq worker concurrency."
 date: 2026-10-01T10:00:00Z
-author: "Gooby Tech Engineering Team"
+author: "Gooby Technologies, LLC Engineering Team"
 tags:
   - "ruby-on-rails"
   - "sidekiq"
@@ -12,7 +12,7 @@ tags:
 
 Ruby on Rails is celebrated for its incredible developer velocity, but as transactional volume surges into millions of requests and background jobs per day, default settings can lead to database connection exhaustion, memory fragmentation, and bloated worker processes.
 
-In this guide, we share the core architectural optimizations we implement at **Gooby Tech** to scale Rails and Sidekiq to high-volume production workloads.
+In this guide, we share the core architectural optimizations we implement at **Gooby Technologies, LLC** to scale Rails and Sidekiq to high-volume production workloads.
 
 ---
 
