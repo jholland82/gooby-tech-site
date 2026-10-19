@@ -1,4 +1,4 @@
 ---
 title: "Engineering Services"
-description: "Comprehensive software engineering services ranging from high-scale distributed systems and cloud infrastructure to modern web platforms and AI engineering."
+description: "Comprehensive software engineering services across Ruby on Rails, TypeScript, React, Angular, C# (.NET), and native Swift iOS applications."
 ---

@@ -1,20 +1,25 @@
 # Gooby Tech — Software Engineering Services Website
 
-A production-grade, ultra-fast Hugo website engineered for software engineering consultancies, cloud architects, and technical service businesses.
+A production-grade, ultra-fast Hugo website engineered for software engineering consultancies and senior developers specializing in **Ruby on Rails**, **TypeScript / JavaScript (React & Angular)**, **C# (.NET)**, and **Swift (iOS)**.
 
-Built with **zero external npm runtime dependencies**, leveraging **Hugo Pipes** for asset fingerprinting, minification, and sub-50ms static builds.
+Built with **zero external npm runtime dependencies**, leveraging **Hugo Pipes** for asset fingerprinting, minification, and sub-30ms static builds.
 
 ---
 
 ## ⚡ Key Highlights & Features
 
-- **Blazing Fast**: Compiles in **< 50 milliseconds** with Hugo extended.
+- **Blazing Fast**: Compiles in **< 30 milliseconds** with Hugo extended.
 - **Deep Tech Visual Aesthetic**: Sleek developer-first dark mode by default with persistent dark/light theme switching.
+- **Specialized Technologies**:
+  - **Ruby on Rails**: Rails 7 & 8, Hotwire / Turbo, Sidekiq background queues, PostgreSQL tuning.
+  - **TypeScript & JavaScript**: Enterprise React, Next.js, and Angular single-page applications.
+  - **C# & .NET**: High-throughput ASP.NET Core (.NET 8/9), Clean Architecture, Entity Framework Core, Azure.
+  - **Swift**: Fluid native iOS & iPadOS applications, SwiftUI, Combine, SwiftData offline-first sync.
 - **Comprehensive Structure**:
-  - **Homepage**: High-impact value proposition hero, live availability status, key metrics strip, core service previews, interactive tech stack matrix with category tabs, client testimonials, and engineering workflow.
+  - **Homepage**: Value proposition hero, live availability status, key metrics strip, core service previews, interactive tech stack matrix with category tabs, client testimonials, and engineering workflow.
   - **Services Section (`/services/`)**: Detailed deep dives for 6 core software engineering services (deliverables checklist, outcomes, tech stack badges, and FAQs).
   - **Case Studies (`/case-studies/`)**: Real-world architectural breakdowns detailing client challenges, technical architectures, stack choices, quantitative ROI metrics, and client endorsements.
-  - **Engineering Insights / Blog (`/blog/`)**: Technical articles with estimated reading time, author metadata, tags, and syntax-highlighted code blocks with "Copy" buttons.
+  - **Engineering Insights / Blog (`/blog/`)**: Technical articles with estimated reading time, author metadata, tags, and syntax-highlighted code blocks with 1-click **Copy** buttons.
   - **About (`/about/`)**: Engineering philosophy, principles, and comparison matrix.
   - **Contact & Hiring (`/contact/`)**: Conversion-optimized technical inquiry form with budget tiers, direct Calendly scheduling, email/phone details, and confidentiality/IP ownership badges.
   - **404 Page (`/404.html`)**: Developer-themed terminal error screen.
@@ -61,20 +66,22 @@ gooby-tech-site/
 │   ├── about.md               # About page & engineering standards
 │   ├── contact.md             # Contact page layout
 │   ├── services/              # Individual service pages
+│   │   ├── ruby-on-rails-engineering.md
+│   │   ├── modern-frontend-react-angular.md
+│   │   ├── csharp-dotnet-enterprise.md
+│   │   ├── swift-ios-mobile.md
 │   │   ├── full-stack-web-apps.md
-│   │   ├── cloud-architecture-devops.md
-│   │   ├── distributed-systems-apis.md
-│   │   ├── ai-machine-learning-engineering.md
-│   │   ├── security-performance-audits.md
-│   │   └── fractional-cto-advisory.md
+│   │   └── security-performance-audits.md
 │   ├── case-studies/          # Quantified technical case studies
-│   │   ├── fintech-realtime-settlement-engine.md
-│   │   ├── healthtech-hipaa-cloud-modernization.md
-│   │   └── ecommerce-distributed-inventory-scaling.md
+│   │   ├── fintech-rails-react-clearing-engine.md
+│   │   ├── enterprise-csharp-angular-modernization.md
+│   │   ├── swift-ios-offline-first-healthcare.md
+│   │   └── ecommerce-rails-angular-inventory.md
 │   └── blog/                  # Technical thought-leadership articles
-│       ├── architecting-sub-10ms-apis-with-go-and-redis.md
-│       ├── building-production-ready-rag-pipelines.md
-│       └── from-monolith-to-modular-monolith-a-practical-guide.md
+│       ├── optimizing-ruby-on-rails-and-sidekiq-at-scale.md
+│       ├── clean-architecture-in-csharp-dotnet-apis.md
+│       ├── building-resilient-offline-apps-in-swift.md
+│       └── angular-vs-react-enterprise-architecture-guide.md
 ├── layouts/                   # Custom Hugo HTML5 templates & partials
 │   ├── _default/
 │   │   ├── baseof.html        # HTML shell with Hugo Pipes asset processing
@@ -115,16 +122,16 @@ Edit `hugo.toml` to customize:
 Create a new Markdown file in `content/services/<slug>.md`:
 ```yaml
 ---
-title: "Mobile App Development (React Native & Flutter)"
-description: "Cross-platform mobile applications engineered for high performance."
+title: "Ruby on Rails Microservices"
+description: "High-throughput Rails API backends."
 weight: 70
 tech_stack:
-  - "React Native"
-  - "Flutter"
-  - "TypeScript"
+  - "Ruby on Rails"
+  - "PostgreSQL"
+  - "Sidekiq"
 deliverables:
-  - "iOS and Android production release"
-  - "Offline-first SQLite sync"
+  - "RESTful API endpoints with JSON:API serialization"
+  - "RSpec test coverage"
 ---
 Your deep dive content here...
 ```
@@ -133,14 +140,14 @@ Your deep dive content here...
 Create a new Markdown file in `content/case-studies/<slug>.md`:
 ```yaml
 ---
-title: "Global Video Streaming Infrastructure"
-description: "Optimizing WebRTC media pipelines."
-industry: "Media & Streaming"
-headline_metric: "< 150ms Glass-to-Glass Latency"
+title: "Swift iOS Sensor Application"
+description: "Real-time Bluetooth telemetry in Swift."
+industry: "Swift (iOS) & TypeScript"
+headline_metric: "Sub-Second Sync | 0 Crashes"
 tech_stack:
-  - "Rust"
-  - "WebRTC"
-  - "Kubernetes"
+  - "Swift 6"
+  - "SwiftUI"
+  - "TypeScript"
 ---
 Case study details...
 ```
@@ -149,7 +156,7 @@ Case study details...
 
 ## 🚢 Deployment Options
 
-Since this site generates pure, static HTML/CSS/JS, it can be hosted on any edge CDN for free or pennies per month:
+Since this site generates pure static HTML/CSS/JS, it can be hosted on any edge CDN:
 
 ### Cloudflare Pages
 - **Build command**: `hugo --minify`
