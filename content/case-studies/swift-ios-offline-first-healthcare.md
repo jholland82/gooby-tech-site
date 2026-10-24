@@ -1,5 +1,6 @@
 ---
 title: "Offline-First Native iOS Health Platform in Swift"
+draft: true
 description: "How we engineered a mission-critical native iOS application using Swift, SwiftUI, and SwiftData, synchronizing patient diagnostics with a TypeScript backend with zero data loss."
 industry: "Swift (iOS) & TypeScript / Node.js"
 client: "Series A Clinical Diagnostics Provider"

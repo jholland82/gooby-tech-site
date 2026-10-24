@@ -1,5 +1,37 @@
 name: gooby-tech
 
+ingress:
+  rules:
+    - component:
+        name: api
+      match:
+        path:
+          prefix: /api
+      preserve_path_prefix: true
+    - component:
+        name: gooby-tech
+      match:
+        path:
+          prefix: /
+
+functions:
+  - name: api
+    github:
+      repo: jholland82/gooby_tech
+      branch: main
+      deploy_on_push: true
+    source_dir: functions
+    envs:
+      - key: RESEND_API_KEY
+        type: SECRET
+        scope: RUN_TIME
+      - key: CONTACT_TO_EMAIL
+        scope: RUN_TIME
+        value: hello@goobytech.com
+      - key: CONTACT_FROM_EMAIL
+        scope: RUN_TIME
+        value: onboarding@resend.dev
+
 static_sites:
   - name: gooby-tech
     github:

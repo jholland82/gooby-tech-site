@@ -35,7 +35,7 @@
             <div class="info-icon">📞</div>
             <div>
               <div style="font-size: 0.8125rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700;">Phone / Signal</div>
-              <div style="font-weight: 600; color: var(--text-main);">{{ .Site.Params.phone }}</div>
+              <a href="tel:{{ .Site.Params.phone }}" style="font-weight: 600; color: var(--text-main); text-decoration: none;">{{ .Site.Params.phone }}</a>
             </div>
           </div>
 
@@ -72,7 +72,10 @@
         <div style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: var(--radius-lg); padding: 2.5rem;">
           <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem;">Project Inquiry Form</h3>
 
-          <form id="contact-form" action="{{ .Site.Params.formspree_endpoint }}" method="POST">
+          <form id="contact-form" action="{{ .Site.Params.contact_api_endpoint | default .Site.Params.formspree_endpoint | default "/api/contact" }}" method="POST">
+            <!-- Honeypot for spam bots -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="contact-name">Your Name *</label>
@@ -128,9 +131,10 @@
               <textarea class="form-control" id="contact-details" name="details" rows="5" required placeholder="Describe your current tech stack, goals, timelines, and main challenges..."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem; font-size: 1rem;">
+            <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%; padding: 0.9rem; font-size: 1rem;">
               Send Technical Inquiry →
             </button>
+            <div id="form-status" style="display: none; margin-top: 1rem; padding: 0.875rem 1rem; border-radius: var(--radius-sm); font-size: 0.875rem; text-align: center; line-height: 1.5;"></div>
             <p style="text-align: center; color: var(--text-dim); font-size: 0.75rem; margin-top: 0.75rem;">
               We never share your data. Confidentiality guaranteed.
             </p>

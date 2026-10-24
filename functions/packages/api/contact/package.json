@@ -1,0 +1,7 @@
+{
+  "name": "contact-api",
+  "version": "1.0.0",
+  "description": "DigitalOcean serverless function for contact inquiries via Resend",
+  "main": "index.js",
+  "private": true
+}

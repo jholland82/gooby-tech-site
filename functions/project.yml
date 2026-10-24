@@ -1,0 +1,11 @@
+packages:
+  - name: api
+    environment:
+      RESEND_API_KEY: "${RESEND_API_KEY}"
+      CONTACT_TO_EMAIL: "${CONTACT_TO_EMAIL}"
+      CONTACT_FROM_EMAIL: "${CONTACT_FROM_EMAIL}"
+    functions:
+      - name: contact
+        main: main
+        runtime: nodejs:20
+        web: true

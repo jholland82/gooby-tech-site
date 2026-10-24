@@ -9,7 +9,7 @@ paginate = 10
   description = 'Gooby Technologies, LLC is an elite software engineering consultancy specializing in Ruby on Rails, TypeScript/JavaScript (React & Angular), C# (.NET), and Swift (iOS).'
   author = 'Gooby Technologies, LLC Engineering Team'
   email = 'hello@goobytech.com'
-  phone = '+1 (555) 234-5678'
+  phone = '1-954-937-7247'
   location = 'San Francisco, CA & Remote Global'
   availability = 'Accepting new projects for Q4 & 2027'
   calendly_url = 'https://calendly.com'
@@ -17,13 +17,15 @@ paginate = 10
   linkedin_url = 'https://linkedin.com'
   twitter_url = 'https://x.com'
 
-  # Contact form endpoint (e.g., https://formspree.io/f/your-id or leave empty for mailto fallback)
+  # Contact form endpoint (DigitalOcean Serverless Function or Formspree fallback)
+  contact_api_endpoint = '/api/contact'
   formspree_endpoint = ''
 
   # Feature flags & UI
   enable_theme_toggle = true
   enable_reading_time = true
   enable_table_of_contents = true
+  enable_case_studies = false
 
 [menu]
   [[menu.main]]
@@ -32,11 +34,11 @@ paginate = 10
     url = '/services/'
     weight = 10
 
-  [[menu.main]]
-    identifier = 'case-studies'
-    name = 'Case Studies'
-    url = '/case-studies/'
-    weight = 20
+  # [[menu.main]]
+  #   identifier = 'case-studies'
+  #   name = 'Case Studies'
+  #   url = '/case-studies/'
+  #   weight = 20
 
   [[menu.main]]
     identifier = 'tech-stack'

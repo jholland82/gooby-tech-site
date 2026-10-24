@@ -1,5 +1,6 @@
 ---
 title: "High-Concurrency Flash Sale Architecture in Rails & Angular"
+draft: true
 description: "How we engineered an atomic distributed inventory reservation engine in Ruby on Rails backed by Redis and an Angular frontend, supporting 10M+ Black Friday visits with zero overselling."
 industry: "Ruby on Rails & Angular / TypeScript"
 client: "Direct-to-Consumer Apparel Brand"

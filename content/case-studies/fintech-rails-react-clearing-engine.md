@@ -1,5 +1,6 @@
 ---
 title: "High-Volume FinTech Platform in Ruby on Rails & React"
+draft: true
 description: "How we scaled a high-volume payment processing platform in Ruby on Rails and React/TypeScript, cutting settlement latency by 90% and handling $60M+ in monthly volume."
 industry: "Ruby on Rails & React / TypeScript"
 client: "Series B Global Payments Gateway"

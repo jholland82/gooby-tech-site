@@ -1,3 +1,8 @@
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
 # Hugo output & build artifacts
 public/
 resources/_gen/

@@ -1,5 +1,6 @@
 ---
 title: "Enterprise Supply Chain Modernization in C# & Angular"
+draft: true
 description: "How we migrated a legacy enterprise logistics platform to modern C# ASP.NET Core and Angular, cutting memory usage by 65% and boosting API throughput 5x."
 industry: "C# (.NET Core) & Angular / TypeScript"
 client: "Global Logistics & Freight Enterprise"
